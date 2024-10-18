@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #005f73;
+    color: aliceblue;
+    position: fixed;
+    width: 100vw;
+    z-index: 4;
+}
+
+.para > a {
+    padding: 5px 35px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.main1 > img {
+    height: 850px;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.contanair {
+    border: 2px solid goldenrod;
+    background-color: rgba(4, 4, 4, 0.312);
+    width: 400px;
+    position: absolute;
+    text-align: center;
+    height: 200px;
+    top: 45%;
+    right: 40%;
+    border: none;
+    padding: 40px;
+    color: aliceblue;
+}
+
+.main1 {
+    position: relative;
+    width: 100%;
+}
+
+.contanair > .btn {
+    padding: 7px;
+    margin: 20px 85px 0px;
+    background-color: orangered;
+}
+
+.contain {
+    padding-left: 20px;
+}
+
+.contain > .list {
+    padding-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contain1 {
+    background-color: rgba(201, 205, 205, 0.323);
+    margin-top: 29px;
+    height: auto; /* Allow it to expand with content */
+}
+
+.box {
+    padding: 10px 0;
+}
+
+.footer {
+    height: 50px;
+    background-color: #005f73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space {
+    line-height: 30px;
+}
+
+.heading2 {
+    color: aquamarine;
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header1 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .para > a {
+        padding: 10px 20px;
+        margin: 5px 0; /* Stack links vertically */
+    }
+
+    .contanair {
+        width: 80%; /* Make it wider on smaller screens */
+        top: 30%; /* Adjust positioning */
+        right: 10%; /* Center it */
+        padding: 20px;
+    }
+
+    .main1 > img {
+        height: 500px; /* Adjust image height */
+    }
+}
+
+@media (max-width: 480px) {
+    .header1 {
+        align-items: flex-start; /* Align items at the start */
+    }
+
+    .contanair {
+        width: 90%; /* Make it even wider */
+        top: 25%; /* Adjust positioning */
+        right: 5%; /* Center it */
+    }
+
+    .btn {
+        width: 100%; /* Full-width button */
+        padding: 10px; /* Increased padding */
+    }
+
+    .contain {
+        padding-left: 10px; /* Reduce padding */
+    }
+
+    .contain > .list {
+        padding-left: 20px; /* Reduce padding */
+    }
+}
